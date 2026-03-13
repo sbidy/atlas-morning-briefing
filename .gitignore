@@ -1,0 +1,47 @@
+# Dependencies
+venv/
+.venv/
+*.egg-info/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment and secrets
+.env
+config.yaml
+config.yaml.local
+
+# Build artifacts
+build/
+dist/
+*.pdf
+
+# Runtime data
+.atlas-state.json
+state.json
+status.json
+blogs.json
+news.json
+papers.json
+scored_papers.json
+stocks.json
+logs/*.log
+
+# IDE
+.vscode/
+.claude/
+
+# Test cache
+.pytest_cache/
+
+# Markdown files (except docs)
+*.md
+!CONTRIBUTING.md
+!README.md
+!SKILL.md
+!SECURITY_FIXES.md
+!examples/*.md
+!references/*.md
+atlas-morning-briefing.json
