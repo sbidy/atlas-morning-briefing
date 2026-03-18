@@ -249,7 +249,8 @@ class BriefingRunner:
                 try:
                     domain = urlparse(link).netloc.lower()
                     blog_domains.add(domain)
-                except Exception:
+                except Exception as e:
+                    logger.error(f"Blog could not be parsed skipp {domain}")
                     pass
             title = blog.get("title", "").lower().strip()
             if title:
@@ -272,7 +273,8 @@ class BriefingRunner:
                     if domain in blog_domains:
                         logger.debug(f"Dedup: removing news from {domain} (covered by blog feed)")
                         continue
-                except Exception:
+                except Exception as e:
+                    logger.error(f"Failed to chatch the news articel for {domain}")
                     pass
 
             deduped_news.append(article)
