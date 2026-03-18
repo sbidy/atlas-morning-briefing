@@ -2,6 +2,8 @@
 
 > **IMPORTANT NOTICE: This project is NOT production-ready. It is provided strictly for testing, experimentation, and educational purposes only. This code has NOT undergone AWS security review and is NOT intended for deployment in production environments or for use with real end-users. Use at your own risk. No guarantees are made regarding security, reliability, availability, or fitness for any particular purpose.**
 
+** This is a adjusted version to use Sonnet 4.6 and is scoped to AI Security realted topics! **
+
 A fully automated morning briefing pipeline that scans ArXiv papers, RSS blogs, stock tickers, and news headlines — then uses Amazon Bedrock to synthesize everything into a Kindle-optimized PDF delivered to your inbox before you wake up.
 
 Supports **Claude Sonnet 4, Kimi K2.5, GLM 4.7, DeepSeek V3.2, Nova Pro, and Nova Lite** on Amazon Bedrock. Switch models in one line of config. Runs without AWS credentials in deterministic mode at zero cost.
